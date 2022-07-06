@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css')}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+
+    <title>log in</title>
+</head>
+<body>
+    <div class="content">
+
+        <div class="login_form_container">
+
+            <div class="login_form">
+
+                <h1 class="name">Log in</h1>
+
+                <div class="forms_point">
+                    <input type="text" class="inputs" id="text" placeholder="Type your nickname adress">
+                    <input type="password" class="inputs" id="passwords" placeholder="Type your password">
+                </div>
+
+                <input type="button" class="confirm_button" value="Log in">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="../static/JS/login.js"></script>
+</body>
+</html>

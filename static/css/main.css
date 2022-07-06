@@ -1,0 +1,30 @@
+
+.main{
+    background-color: #E5E3C9;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.main_colum{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_stories{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+
+}
+
+.main_name{
+    color: #789395;
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}

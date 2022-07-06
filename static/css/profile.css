@@ -1,0 +1,182 @@
+.last_storys{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last_storys .subtitle{
+    padding-top: 50px;
+}
+
+.storys{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.subtitle{
+    font-size: 30px;
+    color: #789395;
+    padding-bottom: 20px;
+}
+
+.change_profile{
+    width: 80%;
+    background-color: #B4CFB0;
+    border-radius: 8px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_colum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_colum .subtitle{
+    padding-bottom: 50px;
+}
+
+.main{
+    padding-bottom: 80px;
+}
+
+.change_profile .subtitle{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.profile_settings{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 95%;
+    min-height: 120px;
+}
+
+.edit{
+    width: 40px;
+    height: 40px;
+    background-color: #94B49F;
+    color: #E5E3C9;
+    padding: 0;
+    margin: 0;
+    border-top: 3px solid #94B49F;
+    border-bottom: 3px solid #94B49F;
+    border-right: 3px solid #94B49F;
+    border-radius: 0 6px 6px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.settings_container{
+    width: 400px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.settings_points{
+    width: 360px;
+    height: 40px;
+    background-color: #E5E3C9;
+    color: #94B49F;
+    font-size: 17px;
+    outline:none;
+    border-top: 3px solid #94B49F;
+    border-bottom: 3px solid #94B49F;
+    border-left: 3px solid #94B49F;
+    border-radius: 6px 0 0 6px;
+    pointer-events: none;
+    padding-left: 10px;
+}
+
+.settings_points_open{
+    pointer-events: auto;
+}
+
+.settings_points ::placeholder{
+    color: #94B49F;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+.disabled_button{
+    pointer-events: none;
+}
+
+.change_passowrd{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 560px;
+    height: 340px;
+    background-color: #B4CFB0;
+    border-radius: 8px;
+    display: none;
+}
+
+.change_passowrd_open{
+    display: block;
+}
+
+.change_passowrd_column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.change_passowrd_column h1{
+    font-size: 40px;
+    color: #789395;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.change_passowrd_ipnut{
+    width: 360px;
+    height: 40px;
+    background-color: #E5E3C9;
+    color: #94B49F;
+    font-size: 17px;
+    outline:none;
+    border: 3px solid #94B49F;
+    border-radius: 6px;
+    padding-left: 10px;
+    margin: 15px;
+}
+
+.change_password_button{
+    width: 300px;
+    height: 50px;
+    background-color: #E5E3C9;
+    border:3px solid #94B49F;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #94B49F;
+    font-size: 20px;
+}
+
+.close_password_form_btn{
+    position: absolute;
+    font-size: 70px;
+    transform: rotate(45deg);
+    top: -5%;
+    left: 92.5%;
+    color: #789395;
+    cursor: pointer;
+}

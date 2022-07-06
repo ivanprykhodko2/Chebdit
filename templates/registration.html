@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/regestration.css')}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="content">
+
+        <div class="registration_form_container">
+
+            <div class="registration_form">
+
+                <h1 class="name">Create new acount !</h1>
+
+                <div class="forms_point">
+                    <input type="text" class="inputs" id="nickname" placeholder="Nickname">
+                    <input type="text" class="inputs" id="first_name" placeholder="Your first name">
+                    <input type="text" class="inputs" id="last_name" placeholder="You last name">
+                    <input type="email" class="inputs" id="email" placeholder="Your email adress">
+                    <input type="password" class="inputs" id="passwords" placeholder="Create yuor password">
+                    <input type="password" class="inputs" id="confirm_passwords" placeholder="Confirm yuor password">
+                </div>
+
+                <input type="button" class="confirm_button" value="Register right now">
+
+                <span class="if_you_have_accaunt">If you have accaunt <span class="redirect_login">click here</span></span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="../static/JS/regisrtation.js"></script>
+</body>
+</html>

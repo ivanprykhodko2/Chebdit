@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <title>Reddit</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="container">
+                <div class="header_row">
+
+                    <h1 class="site_logo">Chebdit</h1>
+                    <div class="header_point">
+                        <div class="header_points">Add story</div>
+                        <div class="header_points">lorem</div>
+                        <div class="header_points">Profile</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="container">
+                <div class="main_colum">
+                    <h1 class="main_name">All story</h1>
+
+                    <div class="main_stories">
+
+                        <div class="added_storys_conainer">
+                                
+                        </div>
+                        
+                        {% for storyData in storys %}
+
+                            <div class="story" data-story_id="{{ storyData.story_id }}">
+
+                                <div class="story_owner">
+    
+                                    <div class="owner_icon"><img src="" alt=""></div>
+                                    <div class="owner_name">{{ storyData.nickname }}</div>
+                                    <div class="story_create_time">{{ storyData.date }}</div>
+    
+                                </div>
+    
+                                <p>{{ storyData.story }}</p>
+
+                                <div class="comments_items_container">
+                                    <input type="button" value="comments" class="open_comments_button">
+
+                                    <div class="comments_container">
+                                        <div class="writing_comments_attributes">
+                                            <textarea class="comments_text_area" placeholder="Write new comment" id="textarea"></textarea>
+
+                                            <div class="submite_comment_button_contaner">
+                                                <input type="button" value="Comment" class="submite_comment_button">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="background"></div>
+
+    <div class="add_story">
+
+        <div class="close_btn">+</div>
+        <div class="add_story_column">
+            <h1>Create story</h1>
+
+            <textarea name="comment" class="input_story" ></textarea>
+
+            <input type="button" value="Create story" class="add_story_btn">
+        </div>
+    </div>
+
+    <script src="../static/JS/main.js"></script>
+</body>
+</html>

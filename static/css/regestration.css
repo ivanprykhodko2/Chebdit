@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Macondo', cursive;
+}
+
+body{
+    background-color: #E5E3C9;
+    height: 100%;
+}
+
+.content{
+    width: 400px;
+    height: auto;
+    min-height: 600px;
+    background-color: #B4CFB0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.registration_form_container{
+    display: flex;
+    justify-content: center;
+    width: 360px;
+    height: 580px;
+}
+
+.registration_form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.name{
+    font-size: 40px;
+    color: #789395;
+    padding-bottom: 20px;
+}
+
+.forms_point{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inputs{
+    margin: 10px;
+    width: 360px;
+    height: 40px;
+    background-color: #E5E3C9;
+    color: #94B49F;
+    border:3px solid #94B49F;
+    border-radius: 6px;
+    font-size: 17px;
+    outline:none;
+}
+
+.inputs::placeholder{
+    color: #94B49F;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.confirm_button{
+    width: 300px;
+    height: 50px;
+    background-color: #E5E3C9;
+    border:3px solid #94B49F;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #94B49F;
+    font-size: 20px;
+}
+
+.if_you_have_accaunt{
+    color: #789395;
+    font-size: 18px;
+}
+
+.redirect_login{
+    color: #789395;
+    cursor:pointer;
+    text-decoration: underline;
+}
